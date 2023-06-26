@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Weather-Now App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-success">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-link-active" href="#"><img src="images/mist.png" alt="Enjoy" height="40px">
+        <div class="font1"> Weather-Now</div>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item font1">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item font1">
+            <a class="nav-link" href="#">Other Projects</a>
+          </li>
+          <li class="nav-item font1">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+    </div>
+  </nav>
+
+  <div class="containerPage container-fluid">
+    <br>
+    <div class="container">
+      <form class="d-flex flex-fill text-center" role="search">
+        <input id="cityInput" value="Delhi" class="form-control me-2" type="search" placeholder="Enter the City Name"
+          aria-label="Search">
+        <button id="fetchButton1" class="btn btn-outline" type="submit"><img src="images/search.png"></button>
+      </form>
+    </div>
+    <br>
+    <div class="card-container">
+      <div class="card-wrapper col-sm-12  mt-3">
+        <div class="card text-center">
+          <div class="card-header">
+            <h5 class="card-title">Weather in <span id="city"></span></h5>
+          </div>
+          <div class="card-body">
+            <img src="images/clear.png" class="card-img-top" id="weatherIcons" alt="Enjoy">
+            <p class="card-text">Temperature is <b><span id="temp"> </span>&deg;C</p></b>
+            <p class="card-text">Cloud Percentage is <b><span id="cloud_pct"> </span>%</p></b>
+            <p class="card-text" id="">Feels Like <b><span id="feels_like"> </span>&deg;C</p></b>
+            <p class="card-text" id="">Wind Speed <b><span id="wind_speed"></span> km/h</p></b>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper col-sm-12 mt-3">
+        <div class="card text-center">
+          <div class="card-header">
+            <h5 class="card-title">More Info <span id="city"></span></h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text" id="">Humidity <b><span id="humidity"></span></p></b>
+            <p class="card-text" id="">Min Temp - <b><span id="min_temp"></span>&deg;C</p></b>
+            <p class="card-text" id="">Max Temp - <b><span id="max_temp"></span>&deg;C</p></b>
+            <p class="card-text" id="">Wind Degree <b><span id="wind_degrees"></span></p></b>
+            <p class="card-text" id="">Sunrise <b><span id="sunrise"></span></b> (GMT + 5:30)</p>
+            <p class="card-text" id="">Sunset <b><span id="sunset"></span></b> (GMT + 5:30)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  <div class="footer text-center">
+    <p>© 2023 Yash Srivastav.
+      <a class="footer-icons" href="https://www.linkedin.com/in/yash-srivastav-36b935224" target="_blank"><img
+          src="images/icons/linkedin.png" height="25px" width="25px"></a>
+    </p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
